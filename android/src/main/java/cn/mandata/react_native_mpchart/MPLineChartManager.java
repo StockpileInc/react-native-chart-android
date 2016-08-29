@@ -115,7 +115,9 @@ public class MPLineChartManager extends MPBarLineChartManager {
             if (config.hasKey("fillAlpha")) dataSet.setFillAlpha((int)(255 * config.getDouble("fillAlpha")));
 
             chartData.addDataSet(dataSet);
+            dataSet.setDrawCubic(true);
         }
+
         chart.setData(chartData);
         chart.invalidate();
     }
