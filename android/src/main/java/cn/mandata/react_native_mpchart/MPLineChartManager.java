@@ -116,6 +116,7 @@ public class MPLineChartManager extends MPBarLineChartManager {
 
             chartData.addDataSet(dataSet);
             dataSet.setDrawCubic(true);
+            dataSet.setHighlightEnabled(false);
         }
 
         chart.setData(chartData);
