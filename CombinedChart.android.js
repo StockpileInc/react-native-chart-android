@@ -9,8 +9,8 @@ class CombinedChart extends Component {
     render() {
         let chartData={};
         let children=this.props.children;
-        if(children.length){
-            for (var i = 0; i < children.length; i++) {
+        if(children.size){
+            for (var i = 0; i < children.size; i++) {
                 var child=children[i]
                 chartData[child.props.chartType]=child.props.data;
             }
